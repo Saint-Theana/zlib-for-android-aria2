@@ -1,0 +1,185 @@
+--------------------
+./configure
+Sat Nov 14 10:51:51 CST 2020
+Checking for gcc...
+=== ztest8834.c ===
+extern int getchar();
+int hello() {return getchar();}
+===
+gcc -c ztest8834.c
+./configure: line 182: gcc: command not found
+... using cc
+
+Checking for obsessive-compulsive compiler options...
+=== ztest8834.c ===
+int foo() { return 0; }
+===
+cc -c -O ztest8834.c
+./configure: line 370: cc: command not found
+(exit code 127)
+Compiler error reporting is too harsh for ./configure (perhaps remove -Werror).
+** ./configure aborting.
+--------------------
+
+
+--------------------
+./configure --prefix=/usr/local --static
+Sat Nov 14 11:12:25 CST 2020
+=== ztest13240.c ===
+extern int getchar();
+int hello() {return getchar();}
+===
+clang -c ztest13240.c
+./configure: line 182: clang: command not found
+... using clang
+
+Checking for obsessive-compulsive compiler options...
+=== ztest13240.c ===
+int foo() { return 0; }
+===
+clang -c -O ztest13240.c
+./configure: line 370: clang: command not found
+(exit code 127)
+Compiler error reporting is too harsh for ./configure (perhaps remove -Werror).
+** ./configure aborting.
+--------------------
+
+
+--------------------
+./configure --prefix=/usr/local --static
+Sat Nov 14 11:12:29 CST 2020
+=== ztest13305.c ===
+extern int getchar();
+int hello() {return getchar();}
+===
+clang -c ztest13305.c
+./configure: line 182: clang: command not found
+... using clang
+
+Checking for obsessive-compulsive compiler options...
+=== ztest13305.c ===
+int foo() { return 0; }
+===
+clang -c -O ztest13305.c
+./configure: line 370: clang: command not found
+(exit code 127)
+Compiler error reporting is too harsh for ./configure (perhaps remove -Werror).
+** ./configure aborting.
+--------------------
+
+
+--------------------
+./configure --prefix=/usr/local --static
+Sat Nov 14 11:13:39 CST 2020
+=== ztest13721.c ===
+extern int getchar();
+int hello() {return getchar();}
+===
+clang -c ztest13721.c
+./configure: line 182: clang: command not found
+... using clang
+
+Checking for obsessive-compulsive compiler options...
+=== ztest13721.c ===
+int foo() { return 0; }
+===
+clang -c -O ztest13721.c
+./configure: line 370: clang: command not found
+(exit code 127)
+Compiler error reporting is too harsh for ./configure (perhaps remove -Werror).
+** ./configure aborting.
+--------------------
+
+
+--------------------
+./configure --prefix=/usr/local --static
+Sat Nov 14 11:13:43 CST 2020
+=== ztest13774.c ===
+extern int getchar();
+int hello() {return getchar();}
+===
+clang -c ztest13774.c
+./configure: line 182: clang: command not found
+... using clang
+
+Checking for obsessive-compulsive compiler options...
+=== ztest13774.c ===
+int foo() { return 0; }
+===
+clang -c -O ztest13774.c
+./configure: line 370: clang: command not found
+(exit code 127)
+Compiler error reporting is too harsh for ./configure (perhaps remove -Werror).
+** ./configure aborting.
+--------------------
+
+
+--------------------
+./configure --prefix=/usr/local --static
+Sat Nov 14 11:15:34 CST 2020
+=== ztest14705.c ===
+extern int getchar();
+int hello() {return getchar();}
+===
+/toolchain/bin/clang -c ztest14705.c
+./configure[345]: /toolchain/bin/clang: inaccessible or not found
+... using /toolchain/bin/clang
+
+Checking for obsessive-compulsive compiler options...
+=== ztest14705.c ===
+int foo() { return 0; }
+===
+/toolchain/bin/clang -c -O ztest14705.c
+./configure[400]: /toolchain/bin/clang: inaccessible or not found
+(exit code 127)
+Compiler error reporting is too harsh for ./configure (perhaps remove -Werror).
+** ./configure aborting.
+--------------------
+
+
+--------------------
+./configure --prefix=/usr/local --static
+Sat Nov 14 11:15:36 CST 2020
+=== ztest14747.c ===
+extern int getchar();
+int hello() {return getchar();}
+===
+/toolchain/bin/clang -c ztest14747.c
+./configure[345]: /toolchain/bin/clang: inaccessible or not found
+... using /toolchain/bin/clang
+
+Checking for obsessive-compulsive compiler options...
+=== ztest14747.c ===
+int foo() { return 0; }
+===
+/toolchain/bin/clang -c -O ztest14747.c
+./configure[400]: /toolchain/bin/clang: inaccessible or not found
+(exit code 127)
+Compiler error reporting is too harsh for ./configure (perhaps remove -Werror).
+** ./configure aborting.
+--------------------
+
+
+--------------------
+./configure --prefix=/data/data/io.neoterm/files/home/aria2//usr/local --static
+Sat Nov 14 11:16:13 CST 2020
+=== ztest15023.c ===
+extern int getchar();
+int hello() {return getchar();}
+===
+/data/data/io.neoterm/files/home/aria2//toolchain/bin/clang -c ztest15023.c
+CANNOT LINK EXECUTABLE "bash": library "libandroid-support.so" not found
+... using /data/data/io.neoterm/files/home/aria2//toolchain/bin/clang
+
+Checking for obsessive-compulsive compiler options...
+=== ztest15023.c ===
+int foo() { return 0; }
+===
+/data/data/io.neoterm/files/home/aria2//toolchain/bin/clang -c -O ztest15023.c
+CANNOT LINK EXECUTABLE "bash": library "libandroid-support.so" not found
+(exit code 1)
+Compiler error reporting is too harsh for ./configure (perhaps remove -Werror).
+** ./configure aborting.
+--------------------
+
+
